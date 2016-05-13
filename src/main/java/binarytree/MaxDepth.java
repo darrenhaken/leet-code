@@ -6,14 +6,6 @@ public class MaxDepth {
         if(root == null) {
             return 0;
         }
-        return maxDepth(root, 0);
-    }
-
-    private int maxDepth(TreeNode node, int depth) {
-        if(node == null) {
-            return depth;
-        }
-
-        return Math.max(maxDepth(node.left, depth + 1), maxDepth(node.right, depth + 1));
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 }
