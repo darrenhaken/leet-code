@@ -1,6 +1,5 @@
 package strings;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Anagram {
@@ -32,7 +31,6 @@ public class Anagram {
                 return false;
             }
         }
-
         return true;
     }
 }
